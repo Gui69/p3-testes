@@ -1,0 +1,22 @@
+<header id="header" class="fixed-top">
+  <div class="container d-flex align-items-center">
+    <!--<h1 class="logo me-auto"><a href="index.html">P3</a></h1>-->
+    <!-- Uncomment below if you prefer to use an image logo -->
+    <a href="{% url 'home' %}" class="logo me-auto"
+      ><img src="/static/img/logo.jpeg" alt="" class="img-fluid"
+    /></a>
+
+    <nav id="navbar" class="navbar order-last order-lg-0">
+      <ul>
+        <li><a class="active" href=" {% url 'home' %}">Início</a></li>
+        <li><a href="{% url 'sobreP3' %}">Sobre o P3</a></li>
+        <li><a href="#">Planos de aula</a></li>
+        <li><a href="#">Relatórios de Turma</a></li>
+      </ul>
+      <i class="bi bi-list mobile-nav-toggle"></i>
+    </nav>
+    <!-- .navbar -->
+
+    <a href="courses.html" class="get-started-btn">Entrar</a>
+  </div>
+</header>
