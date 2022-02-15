@@ -13,6 +13,6 @@ class LoginView(TemplateView):
 class PerfilView(TemplateView):
     template_name = "web/pages/perfil.html"
     
-class PlanejamentoView(TemplateView):
-    template_name = "web/pages/planejamento.html"
+class PlanosView(TemplateView):
+    template_name = "web/pages/planos.html"
 

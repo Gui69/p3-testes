@@ -507,6 +507,28 @@ section {
   margin-bottom: 0;
 }
 
+.breadcrumbsplanos{
+  margin-top: 63px;
+  text-align: center;
+  background: white;
+  padding: 30px 0;
+  color: #0d0d0d;
+}
+@media (max-width: 992px) {
+  .breadcrumbsplanos {
+    margin-top: 53px;
+  }
+}
+.breadcrumbsplanos h2 {
+  font-size: 32px;
+  font-weight: 500;
+}
+.breadcrumbsplanos p {
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
@@ -1394,15 +1416,25 @@ section {
 }
 
 /* 
-    TESTE DA HOME
+  HOME PLANOS
 */ 
 
-#disciplinahome{
-  text-align: center;
+.cotainer{
+padding: 0px;
+display: flex;
+align-items: center;
 }
 
-.img-fluid{
-  position: relative;
-  max-height: 50px;
+
+#mainSlide .carousel-inner, #mainSlide .carousel-item{
+height: 35vh;
+background-position: center center;
+}
+
+.container{
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, 300px);
+  justify-items: center;
 
 }
