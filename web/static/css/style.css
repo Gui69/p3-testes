@@ -1419,22 +1419,38 @@ section {
   HOME PLANOS
 */ 
 
+/* 
+  CARROSSEL HOME
+*/ 
+
 .cotainer{
+
 padding: 0px;
 display: flex;
 align-items: center;
 }
 
 
-#mainSlide .carousel-inner, #mainSlide .carousel-item{
+#mainSlide1 .carousel-inner, #mainSlide1 .carousel-item{
 height: 35vh;
 background-position: center center;
 }
 
-.container{
-  display: grid;
-  justify-content: center;
-  grid-template-columns: repeat(auto-fit, 300px);
-  justify-items: center;
+#mainSlide2 .carousel-inner, #mainSlide2 .carousel-item{
+  height: 35vh;
+  background-position: center center;
+}
+
+#mainSlide3 .carousel-inner, #mainSlide3 .carousel-item{
+  height: 35vh;
+  background-position: center center;
+}
+
+/* 
+  CURIOSIDADE HOME
+*/ 
+
+.contents{
+  position: relative;
 
 }
