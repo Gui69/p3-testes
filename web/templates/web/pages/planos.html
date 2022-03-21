@@ -21,44 +21,116 @@
     <!-- ======= Filtro ======= -->
     <br>
     <div class="navbar navbar-light bg-light">
-      <div class="container-fluid">
-        <div>
-          <p>MENU</p>
-        </div>
+      <div class="container">
         <div class="dropdown">
-          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+          <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
             Disciplina
           </button>
           <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+                disciplina 1
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+              <label class="form-check-label" for="flexCheckChecked">
+                disciplina 2
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+              <label class="form-check-label" for="flexCheckChecked">
+                disciplina 2
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+              <label class="form-check-label" for="flexCheckChecked">
+                disciplina 4
+              </label>
+            </div>
           </ul>
         </div>
         <div class="dropdown">
-          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+          <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
             Ano
           </button>
           <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
+            <label>Fundamental I</label>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+                1 Ano
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+              <label class="form-check-label" for="flexCheckChecked">
+                2 Ano
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+              <label class="form-check-label" for="flexCheckChecked">
+                3 Ano
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+              <label class="form-check-label" for="flexCheckChecked">
+                4 Ano
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+              <label class="form-check-label" for="flexCheckChecked">
+                5 Ano
+              </label>
+            </div>
+            <label>Fundamental II</label>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+              <label class="form-check-label" for="flexCheckChecked">
+                6 Ano
+              </label>
+            </div>
           </ul>
         </div>
         <div class="dropdown">
-          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+          <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
             Ordenação
           </button>
           <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" value="">
+              <label class="form-check-label" for="flexRadioDefault1">
+                Padrão
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" value="">
+              <label class="form-check-label" for="flexRadioDefault1">
+                Disciplina
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" value="">
+              <label class="form-check-label" for="flexRadioDefault1">
+                Data de publicação
+              </label>
+            </div>
           </ul>
         </div>
-        <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
+        <div class="col-4">
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Pesquisa" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">
+              <i class="bi bi-search"></i>
+            </button>
+          </form>
+        </div>
       </div>
     </div>
     <!-- ======= Fim Filtro ======= -->
@@ -70,7 +142,7 @@
               <div class="card">
                 <img class="card-img-top" src="/static/img/logo.jpeg" alt="Imagem de capa do card">
                 <div class="card-img-overlay">
-                  <h5>0xx0000x0</h5>
+                  <h6 class="text-muted">0xx0000x0</h6>
                 </div>
                 <div class="card-body">
                   <h5 class="card-title">Título do card</h5>
@@ -87,7 +159,7 @@
               <div class="card">
                 <img class="card-img-top" src="/static/img/logo.jpeg" alt="Imagem de capa do card">
                 <div class="card-img-overlay">
-                  <h5>0xx0000x0</h5>
+                  <h6 class="text-muted">0xx0000x0</h6>
                 </div>
                 <div class="card-body">
                   <h5 class="card-title">Título do card</h5>
@@ -104,7 +176,7 @@
               <div class="card">
                 <img class="card-img-top" src="/static/img/logo.jpeg" alt="Imagem de capa do card">
                 <div class="card-img-overlay">
-                  <h5>0xx0000x0</h5>
+                  <h6 class="text-muted">0xx0000x0</h6>
                 </div>
                 <div class="card-body">
                   <h5 class="card-title">Título do card</h5>
@@ -121,7 +193,7 @@
               <div class="card">
                 <img class="card-img-top" src="/static/img/logo.jpeg" alt="Imagem de capa do card">
                 <div class="card-img-overlay">
-                  <h5>0xx0000x0</h5>
+                  <h6 class="text-muted">0xx0000x0</h6>
                 </div>
                 <div class="card-body">
                   <h5 class="card-title">Título do card</h5>
@@ -138,7 +210,7 @@
               <div class="card">
                 <img class="card-img-top" src="/static/img/logo.jpeg" alt="Imagem de capa do card">
                 <div class="card-img-overlay">
-                  <h5>0xx0000x0</h5>
+                  <h6 class="text-muted">0xx0000x0</h6>
                 </div>
                 <div class="card-body">
                   <h5 class="card-title">Título do card</h5>
@@ -155,7 +227,7 @@
               <div class="card">
                 <img class="card-img-top" src="/static/img/logo.jpeg" alt="Imagem de capa do card">
                 <div class="card-img-overlay">
-                  <h5>0xx0000x0</h5>
+                  <h6 class="text-muted">0xx0000x0</h6>
                 </div>
                 <div class="card-body">
                   <h5 class="card-title">Título do card</h5>
