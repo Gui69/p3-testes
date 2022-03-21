@@ -81,7 +81,7 @@ h6 {
   position: fixed;
   top: calc(50% - 30px);
   left: calc(50% - 30px);
-  border: 6px solid #5fcf80;
+  border: 6px solid #035aa6;
   border-top-color: #fff;
   border-bottom-color: #fff;
   border-radius: 50%;
@@ -1474,4 +1474,57 @@ section {
 
 .btn-outline-success:active {
   color: #035aa6;
+}
+
+label{
+  text-decoration: solid black;
+}
+
+#filtrobase{
+  background: #fff;
+  transition: all 0.5s;
+  z-index: 997;
+  padding: 15px 0;
+  box-shadow: 0px 0 18px rgba(55, 66, 59, 0.08);
+}
+
+#dropdown{
+  background-color: #f2f2f2;
+  text-decoration-color: #035aa6;
+  border-radius: #035;
+}
+
+/**
+* Mobile Filtro navegation 
+*/
+
+.mobile-filtro-toggle {
+  color: #37423b;
+  font-size: 28px;
+  cursor: pointer;
+  display: none;
+  line-height: 0;
+  transition: 0.5s;
+}
+
+.mobile-filtro-toggle.bi-x {
+  color: #fff;
+}
+
+@media (max-width: 991px) {
+  .mobile-filtro-toggle {
+    display: block;
+  }
+}
+
+.filtro-mobile {
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(32, 38, 34, 0.9);
+  transition: 0.3s;
+  z-index: 999;
 }
