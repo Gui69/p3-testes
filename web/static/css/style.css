@@ -1533,3 +1533,44 @@ label{
 .dropdown-menu{
   padding: 1rem 1rem;
 }
+
+@media screen and (max-width:500px){
+  .btn-outline-primary{
+    font-size:small;
+  }
+  .form-control{
+    font-size:small;
+  }
+  .d-flex{
+    flex-wrap:wrap;
+  }
+}
+
+@media screen and (max-width:340px){
+  .btn-outline-primary{
+    font-size:x-small;
+  }
+  .form-control{
+    font-size:x-small;
+  }
+}
+
+@media screen and (max-width:250px){
+  .btn-outline-primary{
+    font-size:xx-small;
+  }
+  .form-control{
+    font-size:xx-small;
+  }
+}
+
+@media screen and (min-width:270px){
+  .dropdown{
+  padding: 3px;
+}
+}
+
+.form{
+  margin-left:10px;
+  margin-top:3px
+}
