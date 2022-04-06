@@ -1553,6 +1553,9 @@ label{
   .form-control{
     font-size:x-small;
   }
+  .card-text{
+    font-size:small;
+  }
 }
 
 @media screen and (max-width:250px){
@@ -1561,6 +1564,9 @@ label{
   }
   .form-control{
     font-size:xx-small;
+  }
+  .card-text{
+    font-size:x-small;
   }
 }
 
@@ -1573,4 +1579,9 @@ label{
 .form{
   margin-left:10px;
   margin-top:3px
+}
+
+
+.img-fluid{
+  border-radius: 5%;
 }
