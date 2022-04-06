@@ -1273,12 +1273,13 @@ section {
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
+
 #footer  img {
   text-align: left;
   max-height: 65px;
 }
 #footer {
-  color: #37423b;
+  color: #0c0f4b;
   font-size: 14px;
   background: #eef0ef;
 }
@@ -1306,7 +1307,7 @@ section {
 #footer .footer-top h4 {
   font-size: 16px;
   font-weight: bold;
-  color: #444444;
+  color: #0c0f4b;
   position: relative;
   padding-bottom: 12px;
 }
@@ -1384,7 +1385,13 @@ section {
 #footer .footer-newsletter form input[type="submit"]:hover {
   background: #035aa6;
 }
+#footer .copyright {
+  text-align: center;
+  padding-top: 5px;
+  font-size: 13px;
+}
 #footer .credits {
+  text-align: center;
   padding-top: 5px;
   font-size: 13px;
 }
@@ -1414,6 +1421,7 @@ section {
   color: #fff;
   text-decoration: none;
 }
+
 
 /* 
   HOME PLANOS
