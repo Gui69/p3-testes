@@ -1593,3 +1593,49 @@ label{
 .img-fluid{
   border-radius: 5%;
 }
+
+/* 
+  RELATÓRIOS DE TURMA FILTERS
+*/ 
+.flexbox {display: flex; flex-direction: row; margin-left: 130px;}
+#dropdownMenuButtonRelatorio {background-color: #035aa6; color: #f2f2f2; margin-right: 15px;}
+
+@media (max-width: 992px) {
+  .flexbox {justify-content: center; margin-left: auto;} 
+}
+
+
+/* 
+  RELATÓRIOS DE TURMA CARDS
+*/ 
+.card-relatorio{
+  padding: 0 !important;
+  background-color: #035aa6;
+  color: #f2f2f2;
+}
+
+.card-relatorio .card-body {
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+  
+}
+
+.card-relatorio .card-text {
+  font-size: 35px;
+}
+
+@media (max-width: 600px) {
+  .card-relatorio{
+    height: auto;
+  }
+
+  .card-relatorio .card-body{
+    padding: 30px;
+  }
+
+  .card-relatorio .card-text {
+    font-size: 25px;
+  }
+
+}   
