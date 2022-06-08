@@ -1,0 +1,322 @@
+{% extends 'base.html' %} {% block title %}
+<title>Relatórios de Turma</title>
+{% endblock title %}
+{% block content %}
+
+
+<br>
+
+<main id="main">
+    <!-- ======= Breadcrumbs ======= -->
+    <div class="breadcrumbs" data-aos="fade-in">
+        <div class="container">
+        <h2>Relatórios de Turma</h2>
+        <!--A ideia era por um textinho embaixo
+        <p>Tenha um melhor desempenho em seus planejamentos escolares!</p>
+        -->
+        </div>
+    </div>
+    <!-- End Breadcrumbs -->
+
+    <!-- ======= Filtro ======= -->
+    <br>
+    <div class="filtrobase navbar-light bg-light">
+      <div class="container d-flex justify-content-around">
+
+        <div class="dropdown">
+            <button class="btn btn-outline-primary dropdown-toggle" type="button" id="dropdownMenuButtonRelatorio" data-bs-toggle="dropdown" aria-expanded="false">
+              Ano
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <label>Fundamental I</label>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  1º Ano
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                <label class="form-check-label" for="flexCheckChecked">
+                  2º Ano
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                <label class="form-check-label" for="flexCheckChecked">
+                  3º Ano
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                <label class="form-check-label" for="flexCheckChecked">
+                  4º Ano
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                <label class="form-check-label" for="flexCheckChecked">
+                  5º Ano
+                </label>
+              </div>
+              <label>Fundamental II</label>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                <label class="form-check-label" for="flexCheckChecked">
+                  6º Ano
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                <label class="form-check-label" for="flexCheckChecked">
+                  7º Ano
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                <label class="form-check-label" for="flexCheckChecked">
+                  8º Ano
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                <label class="form-check-label" for="flexCheckChecked">
+                  9º Ano
+                </label>
+              </div>
+            </ul>
+        </div>
+
+        <div class="dropdown">
+            <button class="btn btn-outline-primary dropdown-toggle" type="button" id="dropdownMenuButtonRelatorio" data-bs-toggle="dropdown" aria-expanded="false">
+              Turma
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Elemento 1
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                <label class="form-check-label" for="flexCheckChecked">
+                  Elemento 2
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                <label class="form-check-label" for="flexCheckChecked">
+                  Elemento 3
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                <label class="form-check-label" for="flexCheckChecked">
+                  Elemento 4
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                <label class="form-check-label" for="flexCheckChecked">
+                  Elemento 5
+                </label>
+              </div>
+              
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                <label class="form-check-label" for="flexCheckChecked">
+                  Elemento 6
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                <label class="form-check-label" for="flexCheckChecked">
+                  Elemento 7
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                <label class="form-check-label" for="flexCheckChecked">
+                  Elemento 8
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                <label class="form-check-label" for="flexCheckChecked">
+                    Elemento 9
+                </label>
+              </div>
+            </ul>
+        </div>
+        
+        <div class="dropdown">
+          <button class="btn btn-outline-primary dropdown-toggle" type="button" id="dropdownMenuButtonRelatorio" data-bs-toggle="dropdown" aria-expanded="false">
+            Disciplina
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+                Artes
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+              <label class="form-check-label" for="flexCheckChecked">
+                Ciências
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+              <label class="form-check-label" for="flexCheckChecked">
+                Eduação Física
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+              <label class="form-check-label" for="flexCheckChecked">
+                Geografia
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+              <label class="form-check-label" for="flexCheckChecked">
+                História
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+              <label class="form-check-label" for="flexCheckChecked">
+                Inglês
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+              <label class="form-check-label" for="flexCheckChecked">
+                Língua Portuguesa
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+              <label class="form-check-label" for="flexCheckChecked">
+                Matemática
+              </label>
+            </div>
+          </ul>
+        </div>
+        
+      </div>
+    </div>
+    <br>
+    <!-- ======= Fim Filtro ======= -->
+   
+    <!-- ======= Relatórios ======= -->
+    <div id="conteudo" class="container">
+        <div class="row d-flex justify-content-center">
+            <div class="col-lg-4 col-md-5 col-sm-6 col-8">
+              <div class="card-relatorio">
+                <img class="card-img-top" id="img" src="/static/img/relatório.jpg" alt="Imagem de capa do card">
+                
+                <div class="card-body">
+                  <p class="card-text">Adicionar</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-5 col-sm-6 col-8">
+              <div class="card-relatorio">
+                <img class="card-img-top" id="img" src="/static/img/relatório.jpg" alt="Imagem de capa do card">
+                
+                <div class="card-body">
+                  <p class="card-text">1° ano</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-5 col-sm-6 col-8">
+                <div class="card-relatorio">
+                  <img class="card-img-top" id="img" src="/static/img/relatório.jpg" alt="Imagem de capa do card">
+                  
+                  <div class="card-body">
+                    <p class="card-text">2° ano</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-5 col-sm-6 col-8">
+                <div class="card-relatorio">
+                  <img class="card-img-top" id="img" src="/static/img/relatório.jpg" alt="Imagem de capa do card">
+                  
+                  <div class="card-body">
+                    <p class="card-text">3° ano</p>
+                  </div>
+                </div>
+              </div>
+
+            <div class="col-lg-4 col-md-5 col-sm-6 col-8">
+              <div class="card-relatorio">
+                <img class="card-img-top" id="img" src="/static/img/relatório.jpg" alt="Imagem de capa do card">
+                
+                <div class="card-body">
+                  <p class="card-text">4° ano</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-5 col-sm-6 col-8">
+              <div class="card-relatorio">
+                <img class="card-img-top" id="img" src="/static/img/relatório.jpg" alt="Imagem de capa do card">
+                
+                <div class="card-body">
+                  <p class="card-text">5° ano</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-5 col-sm-6 col-8">
+              <div class="card-relatorio">
+                <img class="card-img-top" id="img" src="/static/img/relatório.jpg" alt="Imagem de capa do card">
+                
+                <div class="card-body">
+                  <p class="card-text">6° ano</p>
+                </div>
+              </div>
+            </div> 
+
+            <div class="col-lg-4 col-md-5 col-sm-6 col-8">
+              <div class="card-relatorio">
+                <img class="card-img-top" id="img" src="/static/img/relatório.jpg" alt="Imagem de capa do card">
+                
+                <div class="card-body">
+                  <p class="card-text">7° ano</p>
+                </div>
+              </div>
+            </div>  
+            
+            <div class="col-lg-4 col-md-5 col-sm-6 col-8">
+              <div class="card-relatorio">
+                <img class="card-img-top" id="img" src="/static/img/relatório.jpg" alt="Imagem de capa do card">
+                
+                <div class="card-body">
+                  <p class="card-text">8° ano</p>
+                </div>
+              </div>
+            </div>   
+
+            
+            
+            
+            
+            
+            
+        </div>
+    </div>
+    <!-- ======= Fim Planos ======= -->
+
+</main>
+
+<!-- End #main -->
+
+
+{% endblock content %}

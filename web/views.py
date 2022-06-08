@@ -15,4 +15,9 @@ class PerfilView(TemplateView):
     
 class PlanosView(TemplateView):
     template_name = "web/pages/planos.html"
+    
+class CriarPlanoView(TemplateView):
+    template_name = "web/pages/criar-plano.html"
 
+class RelatoriosView(TemplateView):
+    template_name = "web/pages/relatorio_turma.html"    

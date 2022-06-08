@@ -128,3 +128,20 @@
 
 })()
 
+let btn_register = document.getElementById("btn-register");
+let btn_login = document.getElementById("btn-login");
+
+btn_register.addEventListener("click", (e) => {
+  document.getElementById("modal-title").innerText = "Cadastre-se";
+});
+
+btn_login.addEventListener("click", (e) => {
+  document.getElementById("modal-title").innerText = "Entrar";
+});
+
+var myModal = document.getElementById('myModal')
+var myInput = document.getElementById('myInput')
+
+myModal.addEventListener('shown.bs.modal', function () {
+  myInput.focus()
+})
