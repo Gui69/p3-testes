@@ -17,7 +17,7 @@
         ></button>
       </div>
       <div class="modal-body">
-        <form id="form-register">
+        <form class="signup" id="signup_form" method="post" action="{% url 'account_signup' %}">
           <div class="mb-3">
             <label for="exampleInputEmail1" class="form-label"
               >Email address</label
@@ -43,13 +43,21 @@
             />
           </div>
         </form>
+        <form class="signup" id="signup_form" method="post" action="{% url 'account_signup' %}">
+          {% csrf_token %}
+          {{ form.as_p }}
+          {% if redirect_field_value %}
+          <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+          {% endif %}
+          <button type="submit">&raquo;</button>
+        </form>
       </div>
 
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
           Cancelar
         </button>
-        <button id="btn-register" type="button" class="btn btn-primary">
+        <button id="btn-register" type="submit" class="btn btn-primary">
           Cadastrar
         </button>
         <button id="btn-login" type="button" class="btn btn-primary">
